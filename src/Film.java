@@ -9,7 +9,7 @@ public class Film {
 
     public static void main(String[] args) {
 
-        System.out.println("lutfen 1 ile " +filmler.size() +" arasinda giriniz");
+        System.out.println("lutfen 1 ile " +filmler.size() +" arasinda bir deger giriniz");
         int index = scan.nextInt()-1;
         filmiBul(filmler,index);
 
@@ -21,7 +21,7 @@ public class Film {
         int tahmin = kelimeHarfSayisi * 2;
         String film = filmler.get(index);
         int filmKarakterSayisi=film.length();
-        System.out.println("Sectiginiz filmim karakter sayisi "+filmKarakterSayisi);
+        System.out.println("Sectiginiz filmin karakter sayisi "+filmKarakterSayisi);
         System.out.println("tahmin hakkiniz " + tahmin);
         String[] arr = film.split("");
         char harf = ' ';
